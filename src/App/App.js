@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import { getReservations } from './apiCalls'
+import { getReservations } from './apiCalls';
+import DisplayContainer from './DisplayContainer';
 
 class App extends Component {
   constructor() {
@@ -10,7 +11,6 @@ class App extends Component {
 
     }
   }
-
 
   componentDidMount = () => {
     getReservations()
@@ -26,7 +26,7 @@ class App extends Component {
 
         </div>
         <div className='resy-container'>
-          
+          <DisplayContainer data={this.state.reservations} />
         </div>
       </div>
     )
