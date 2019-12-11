@@ -1,0 +1,4 @@
+.res-display {
+  display: flex;
+  flex-wrap: wrap;
+}

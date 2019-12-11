@@ -23,3 +23,6 @@ const DisplayContainer = ({ data }) => {
 
 export default DisplayContainer;
 
+DisplayContainer.propTypes = {
+  data: PropTypes.array
+}
