@@ -7,3 +7,7 @@ export const getReservations = () => {
       return res.json()
     })
 }
+
+export const makeReservation = () => {
+  return fetch()
+}

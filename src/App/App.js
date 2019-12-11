@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import { getReservations } from './apiCalls';
 import DisplayContainer from './DisplayContainer';
+import Form from './Form';
 
 class App extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       reservations: [],
 
@@ -23,7 +24,7 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-
+          <Form />
         </div>
         <div className='resy-container'>
           <DisplayContainer data={this.state.reservations} />
