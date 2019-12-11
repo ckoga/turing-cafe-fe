@@ -19,8 +19,8 @@ describe('DisplayContainer', () => {
   })
 
   it('should match the snapshot', () => {
-
     expect(wrapper).toMatchSnapshot()
   });
+
   
 })
