@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayContainer should match the snapshot 1`] = `
+<main
+  className="res-display"
+>
+  <ReservationCard
+    date="02/09"
+    name="Thao"
+    numberGuests={2}
+    time="10:16"
+  />
+</main>
+`;
